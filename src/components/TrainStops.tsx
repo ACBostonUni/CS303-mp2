@@ -2,7 +2,7 @@ import styled from "styled-components";
 import type {Stop} from "../interfaces/Stop.ts"
 
 const AllStopsDiv = styled.div`
-    margin-left: 20%;
+    margin-left: 18%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; // Wrap onto multiple lines if the width of the screen is exceeded - I like this function
