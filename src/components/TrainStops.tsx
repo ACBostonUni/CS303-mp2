@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import type {Stop} from "../interfaces/Stop.ts"
+import mbtaImg from '../Assets/MBTA-imp.jpg';
+import mbtaImg2 from '../Assets/mbtaImg2.jpg';
+import mbtaImg3 from '../Assets/mbtaImg3.jpg';
 
 const AllStopsDiv = styled.div`
     padding-left: 18%;
@@ -24,6 +27,11 @@ const StopDiv = styled.div`
     
 `
 
+const NameDiv = styled.div`
+    font: calc(19px + 1vw) "Times New Roman";
+    font-weight: bolder;
+    padding: 1% 1% 1% 1%;
+`
 
 
 const TextDiv = styled.div`
@@ -31,6 +39,19 @@ const TextDiv = styled.div`
     padding: 1% 1% 1% 1%;
 `
 
+const ImgDiv = styled.div`
+    height: 20%;
+    width: 40%;
+    margin: 3% auto;
+    
+   
+    img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+       
+    }
+`
 
 export default function TrainStops(Stop_Data: { data: Stop[] }) {
     return (
@@ -38,7 +59,9 @@ export default function TrainStops(Stop_Data: { data: Stop[] }) {
             {
                 Stop_Data.data.map((s: Stop) => (
                     <StopDiv key={s.id}>
-                        <h1>{s.attributes.name}</h1>
+                        <NameDiv>{s.attributes.name}</NameDiv>
+
+                        <ImgDiv><img src={s.attributes.name.length <= 10 ? mbtaImg : s.attributes.name.length <= 15 ? mbtaImg2 : mbtaImg3 } alt={"Cartoonized MBTA Green Line"}/></ImgDiv>
                         <TextDiv>{s.attributes.address || "Address Not Available"}</TextDiv>
                         <TextDiv>{s.attributes.municipality}</TextDiv>
                         <TextDiv>Wheelchair Access: {s.attributes.wheelchair_boarding >= 1 ? "Yes" : "No"}</TextDiv>
