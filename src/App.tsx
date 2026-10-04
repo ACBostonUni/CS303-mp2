@@ -28,8 +28,7 @@ export default function App() {
     }, [data.length]);
 
     return (
-                <TrainStops data={data}/>
-
+        <TrainStops data={data}/>
     )
 
 
