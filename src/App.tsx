@@ -1,12 +1,8 @@
 import TrainStops from "./components/TrainStops.tsx";
 import type {Stop} from "./interfaces/Stop.ts";
 import {useEffect, useState} from "react";
-import styled from "styled-components";
 
 
-const MainDiv = styled.div`
-
-`;
 
 
 export default function App() {
@@ -32,12 +28,7 @@ export default function App() {
     }, [data.length]);
 
     return (
-        <MainDiv>
-
                 <TrainStops data={data}/>
-
-        </MainDiv>
-
 
     )
 
