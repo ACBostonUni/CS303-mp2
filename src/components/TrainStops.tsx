@@ -21,11 +21,16 @@ const StopDiv = styled.div`
     margin: 3%;
     border: #00843D 15px double;
     padding: 1% 1% 1% 1%;
-    width: 34%;
+    width: 24%;
     height: 90%;
     text-align: center;
     background-color: #16a658;
     color: #FCFAF5;
+
+
+    @media screen and (max-width: 800px){
+    width: 34%;
+    }
     
 `
 
@@ -35,6 +40,8 @@ const NameDiv = styled.div`
     padding: 1% 1% 1% 1%;
 
     text-wrap: wrap;
+
+
     
 `
 
