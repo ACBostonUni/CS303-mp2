@@ -30,7 +30,7 @@ const StopDiv = styled.div`
 `
 
 const NameDiv = styled.div`
-    font: calc(8px + 2.4vw) "Times New Roman";
+    font: calc(6px + 2.6vw) "Times New Roman";
     font-weight: bolder;
     padding: 1% 1% 1% 1%;
 
