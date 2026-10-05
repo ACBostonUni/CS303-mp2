@@ -21,7 +21,7 @@ const StopDiv = styled.div`
     margin: 3%;
     border: #00843D 15px double;
     padding: 1% 1% 1% 1%;
-    width: 30%;
+    width: 34%;
     height: 90%;
     text-align: center;
     background-color: #16a658;
