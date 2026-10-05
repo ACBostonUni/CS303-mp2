@@ -5,12 +5,14 @@ import mbtaImg2 from '../Assets/mbtaImg2.jpg';
 import mbtaImg3 from '../Assets/mbtaImg3.jpg';
 
 const AllStopsDiv = styled.div`
-    padding-left: 18%;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap; // Wrap onto multiple lines if the width of the screen is exceeded - I like this function
     background-color: #dcffdc;
     border: #00843D 15px solid;
+    justify-content: center;
+    align-items: center;
 `;
 
 
