@@ -30,14 +30,17 @@ const StopDiv = styled.div`
 `
 
 const NameDiv = styled.div`
-    font: calc(19px + 1vw) "Times New Roman";
+    font: calc(12px + 1.9vw) "Times New Roman";
     font-weight: bolder;
     padding: 1% 1% 1% 1%;
+
+    text-wrap: wrap;
+    
 `
 
 
 const TextDiv = styled.div`
-    font: calc(4px + 1vw) "Times New Roman" ;
+    font: calc(4px + 1.5vw) "Times New Roman" ;
     padding: 1% 1% 1% 1%;
 `
 
