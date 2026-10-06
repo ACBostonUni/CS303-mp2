@@ -34,12 +34,7 @@ const StopDiv = styled.div`
     
 `
 
-const WebHeader = styled.div'
-    font: calc(12px + 2.6vw) "Times New Roman";
-    font-weight: bolder;
-    color: #FCFAF5;
-    text-align: center;
-'
+
 
 const NameDiv = styled.div`
     font: calc(6px + 2.6vw) "Times New Roman";
@@ -51,7 +46,12 @@ const NameDiv = styled.div`
 
     
 `
-
+const WebHeader = styled.header`
+    font: calc(12px + 2.6vw) "Times New Roman";
+    font-weight: bolder;
+    color: #FCFAF5;
+    text-align: center;
+`
 
 const TextDiv = styled.div`
     font: calc(4px + 1.5vw) "Times New Roman" ;
