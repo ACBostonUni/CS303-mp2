@@ -34,6 +34,13 @@ const StopDiv = styled.div`
     
 `
 
+const WebHeader = styled.div'
+    font: calc(12px + 2.6vw) "Times New Roman";
+    font-weight: bolder;
+    color: #FCFAF5;
+    text-align: center;
+'
+
 const NameDiv = styled.div`
     font: calc(6px + 2.6vw) "Times New Roman";
     font-weight: bolder;
@@ -68,6 +75,9 @@ const ImgDiv = styled.div`
 export default function TrainStops(Stop_Data: { data: Stop[] }) {
     return (
         <AllStopsDiv>
+            <WebHeader>
+                MBTA Green Line Train Stops
+            </WebHeader>
             {
                 Stop_Data.data.map((s: Stop) => (
                     <StopDiv key={s.id}>
