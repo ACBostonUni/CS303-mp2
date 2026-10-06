@@ -49,8 +49,9 @@ const NameDiv = styled.div`
 const WebHeader = styled.header`
     font: calc(12px + 2.6vw) "Times New Roman";
     font-weight: bolder;
-    color: #FCFAF5;
+    color: #3f3f3e;
     text-align: center;
+    width: 100%;
 `
 
 const TextDiv = styled.div`
